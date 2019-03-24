@@ -1,4 +1,4 @@
-# Rust for Node.js Developers
+# Rust for Node.js Developers (work in progress 😊)
 
 ![](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -26,7 +26,13 @@ cargo install cargo-script
 cargo script filename.rs
 ```
 
-Or you can use [Rust Playground](https://play.rust-lang.org/) too.
+_Note: Sometimes the Rust source will have comment like this:_
+
+```
+// cargo-deps: time="0.1.25"
+```
+
+_This is only to let `cargo script` know that it needs to download `version 0.1.25` of [`time` crate](https://crates.io/crates/time) before running the file. You don't need that comment in a Rust project file created with `cargo new` command._
 
 ### comments
 
@@ -53,7 +59,8 @@ Or you can use [Rust Playground](https://play.rust-lang.org/) too.
 /// let five = 5
 /// ```
 ///
-/// Documentation comments must come before what they document. The code will not compile if we place this comment inside the function!
+/// Documentation comments must come before what they document.
+/// The code will not compile if we place this comment inside the function!
 fn main() {
     // This is a line comment
     // that extend multiple lines like this.
