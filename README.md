@@ -8,6 +8,7 @@ This guide full of examples is intended for people learning Rust that are coming
 
 - [Examples](#examples)
   - [comments](#comments)
+  - [printing](#printing)
 - [Contributing](#contributing)
 - [Acknowledgement](#acknowledgement)
 - [License](#license)
@@ -18,7 +19,7 @@ All sample code is available in [examples/](examples/)
 
 Use `cargo-script` for running Rust `.rs` codes:
 
-```
+```bash
 # Install cargo-script
 cargo install cargo-script
 
@@ -28,7 +29,7 @@ cargo script filename.rs
 
 _Note: Sometimes the Rust source will have comment like this:_
 
-```
+```rust
 // cargo-deps: time="0.1.25"
 ```
 
@@ -71,6 +72,48 @@ fn main() {
 }
 
 ````
+
+### printing
+
+---
+
+#### Node.js
+
+```js
+console.log('hello world');
+console.log('hello %s', 'world');
+console.log('hello %d %s', 5, 'worlds');
+```
+
+Output
+
+```bash
+hello world
+hello world
+hello 5 worlds
+```
+
+#### Rust
+
+`println!` is a [macro](https://doc.rust-lang.org/book/ch19-06-macros.html)
+
+```rust
+
+fn main() {
+    println!("hello world");
+    println!("hello {}", "world");
+    println!("hello {} {}", 5, "worlds");
+}
+
+```
+
+Output
+
+```bash
+hello world
+hello world
+hello 5 worlds
+```
 
 ## Contributing
 
