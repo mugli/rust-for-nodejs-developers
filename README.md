@@ -1,8 +1,12 @@
-# Rust for Node.js Developers (work in progress 😊)
+# Rust for Node.js Developers
 
 ![](https://img.shields.io/badge/license-MIT-green.svg)
 
+(**Work in progress**. Done: 3 of 60 planned examples)
+
 This guide full of examples is intended for people learning Rust that are coming from Node.js, although the vice versa can work too. I made this because I'm learning Rust myself, hoping maybe it'll also help other people with similar background and interest. I tried to learn idiomatic rust along the way, but please feel free to send PR if you find something that can be improved.
+
+This is a [cookbook style](https://rust-lang-nursery.github.io/rust-cookbook/) guide. However, it doesn't explain how to install Rust, what cargo is etc. If you need help with that, this might be a good starting point, which is written in tutorial style: https://github.com/Mercateo/rust-for-node-developers
 
 ## Contents
 
